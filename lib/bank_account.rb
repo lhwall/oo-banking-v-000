@@ -13,7 +13,7 @@ class BankAccount
   end
   
   def balance
-  "Your balance is #{$@balance}."
+  "Your balance is $#{@balance}."
  end
   
 end
