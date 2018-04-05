@@ -12,4 +12,8 @@ class BankAccount
     @balance += amount 
   end
   
+  def balance
+  "Your balance is #{$@balance}."
+ end
+  
 end
