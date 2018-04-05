@@ -1,3 +1,5 @@
+require 'pry'
+
 class Transfer
   # your code here
   attr_accessor :sender, :receiver, :status, :amount
@@ -17,6 +19,7 @@ class Transfer
     if self.valid? && @status == "pending"
         @sender.balance -= amount 
         @receiver.balance += amount 
+        binding.pry
         @status = "complete"
     else 
       @status = "rejected"
